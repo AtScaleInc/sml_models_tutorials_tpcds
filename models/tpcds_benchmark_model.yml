@@ -378,7 +378,6 @@ dimensions:
   - Returns_Time_Tier
   - Sales_Price_Tier
   - Ss_Ticket_Number
-  - Ws_Web_Site_Sk
 include_default_drillthrough: true
 metrics:
   - unique_name: m_catalog_sales_coupon_amount_avg
@@ -1088,3 +1087,11 @@ relationships:
     to:
       dimension: Product Dimension - TPC-DS
       level: Product Dimension - TPC-DS
+  - unique_name: web_sales_ws_web_site_sk_to_web_site_dimension_web_site_dimension Level
+    from:
+      dataset: web_sales
+      join_columns:
+        - ws_web_site_sk
+    to:
+      dimension: web_site_dimension
+      level: web_site_dimension Level

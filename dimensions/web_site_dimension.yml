@@ -1,0 +1,19 @@
+unique_name: web_site_dimension
+object_type: dimension
+label: web_site_dimension
+hierarchies:
+  - unique_name: web_site_dimension Hierarchy
+    label: web_site_dimension Hierarchy
+    levels:
+      - unique_name: web_site_dimension Level
+level_attributes:
+  - unique_name: web_site_dimension Level
+    label: web_site_dimension Level
+    contains_unique_names: false
+    dataset: web_site
+    is_unique_key: true
+    key_columns:
+      - web_site_sk
+    name_column: web_name
+    sort_column: web_name
+type: standard

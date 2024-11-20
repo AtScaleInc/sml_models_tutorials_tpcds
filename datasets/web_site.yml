@@ -1,0 +1,58 @@
+unique_name: web_site
+object_type: dataset
+label: web_site
+columns:
+  - name: web_site_sk
+    data_type: long
+  - name: web_site_id
+    data_type: string
+  - name: web_rec_start_date
+    data_type: date
+  - name: web_rec_end_date
+    data_type: date
+  - name: web_name
+    data_type: string
+  - name: web_open_date_sk
+    data_type: long
+  - name: web_close_date_sk
+    data_type: long
+  - name: web_class
+    data_type: string
+  - name: web_manager
+    data_type: string
+  - name: web_mkt_id
+    data_type: long
+  - name: web_mkt_class
+    data_type: string
+  - name: web_mkt_desc
+    data_type: string
+  - name: web_market_manager
+    data_type: string
+  - name: web_company_id
+    data_type: long
+  - name: web_company_name
+    data_type: string
+  - name: web_street_numeric
+    data_type: string
+  - name: web_street_name
+    data_type: string
+  - name: web_street_type
+    data_type: string
+  - name: web_suite_numeric
+    data_type: string
+  - name: web_city
+    data_type: string
+  - name: web_county
+    data_type: string
+  - name: web_state
+    data_type: string
+  - name: web_zip
+    data_type: string
+  - name: web_country
+    data_type: string
+  - name: web_gmt_offset
+    data_type: decimal(5,2)
+  - name: web_tax_percentage
+    data_type: decimal(5,2)
+connection_id: Connection - TPCDS
+table: web_site
